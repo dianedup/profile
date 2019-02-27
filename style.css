@@ -51,11 +51,12 @@ td img{
 .btn {
   border: 1px solid #F45B02;
   color: #F45B02;
+  border-radius: 0;
 }
 
 .btn:hover {
-  border: 1px solid #2274A5;
-  background-color: #2274A5;
+  border: 1px solid #F45B02;
+  background-color: #F45B02;
   color:rgb(254,254,254);
 }
 /*.container {
@@ -103,7 +104,7 @@ td img{
     top: 0;
     bottom: 0;
     text-align: center;
-    background-color: #2274A5;
+    background-color: #002852;
   }
 
   #sidebar ul {
