@@ -81,7 +81,7 @@ td img{
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
   .container {
-    width: 350px;
+    width: 375px;
     margin: 0 auto; /* This automatically sets left/right margins */
   }
 }
@@ -117,6 +117,10 @@ td img{
 }
 #header p {
   text-align: center;
+}
+
+#header img {
+  margin: 0 0 10px 0;
 }
 
 /*#footer a {
