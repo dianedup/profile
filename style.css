@@ -64,28 +64,62 @@ td img{
 /*}*/
 
 
-@media {
-  /* For a screen < 960px, this CSS will be read */
+  /* For a screen >720px, this CSS will be read */
   .container {
     width: 700px;
     margin: 0 auto; /* This automatically sets left/right margins */
   }
-}
+
+  #page-content {
+    margin-left: 70px;
+  }
+
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */
   .container {
-    width: 500px;
+    width: 480px;
     margin: 0 auto; /* This automatically sets left/right margins */
   }
 }
+
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
   .container {
     width: 375px;
     margin: 0 auto; /* This automatically sets left/right margins */
   }
+  #sidebar {
+    display: none;
+  }
+  #page-content {
+    margin-left: 0px;
+  }
 }
 
+  #sidebar {
+    position: fixed;
+    width: 70px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: #2274A5;
+  }
+
+  #sidebar ul {
+  list-style: none;
+  padding-left: 0;
+  }
+  #sidebar li {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  #sidebar a {
+    color: rgb(254,254,254);
+  }
+  #sidebar a:hover {
+    color: #FFC900;
+  }
 
 .profile-card {
   background: rgb(254,254,254);
@@ -122,11 +156,3 @@ td img{
 #header img {
   margin: 0 0 10px 0;
 }
-
-/*#footer a {
-  color: #F45B02;
-}
-
-#footer a:hover {
-  color: #FFC900;
-}*/
